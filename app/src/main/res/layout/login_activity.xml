@@ -35,15 +35,19 @@
                 android:layout_height="wrap_content"
                 android:text="Email" />
 
-            <EditText
-                android:id="@+id/editTextTextEmailAddress"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/padding_l"
-                android:background="@drawable/custom_edit_text"
-                android:ems="10"
-                android:hint="Enter your email"
-                android:inputType="textEmailAddress" />
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/emailEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_l"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:hint="Enter your email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:id="@+id/textView2"
@@ -51,18 +55,22 @@
                 android:layout_height="wrap_content"
                 android:text="Password" />
 
-            <EditText
-                android:id="@+id/editTextTextPassword"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/padding_l"
-                android:background="@drawable/custom_edit_text"
-                android:ems="10"
-                android:hint="Enter your password"
-                android:inputType="textPassword" />
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/passEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_l"
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -71,7 +79,7 @@
                 android:textColor="@android:color/white" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/registerBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/padding_l"
@@ -80,7 +88,7 @@
                 android:textColor="@color/colorPrimary" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/privacyTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Side Hustle's Privacy Policy"
